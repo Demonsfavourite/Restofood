@@ -188,8 +188,8 @@ foods.forEach(createCart)
 foods.forEach(filled);
 
 window.onload = e => {
-  menuPage = document.baseURI === 'file:///C:/Users/Joshua/Desktop/restofood/menus.html';
-  contactPage = document.baseURI === 'file:///C:/Users/Joshua/Desktop/restofood/contact.html';
+  menuPage = document.baseURI === 'https://jinshin19.github.io/Restofood/menus.html';
+  contactPage = document.baseURI === 'https://jinshin19.github.io/Restofood/contact.html';
   menuBracket = document.baseURI === 'http://127.0.0.1:49197/menus.html';
   contactBracket= document.baseURI === 'http://127.0.0.1:49197/menus.html';
   device1 = matchMedia('(max-width: 320px)').matches && matchMedia('(max-height: 658px)').matches;
