@@ -387,8 +387,8 @@ document.querySelector('.cbtn').onclick = e => {
 }
 
 const device = e => {
-  menuPage = document.baseURI === 'file:///C:/Users/Joshua/Desktop/Project1/menus.html';
-  contactPage = document.baseURI === 'file:///C:/Users/Joshua/Desktop/Project1/contact.html';
+  menuPage = document.baseURI === 'https://jinshin19.github.io/Restofood/menus.html';
+  contactPage = document.baseURI === 'https://jinshin19.github.io/Restofood/contact.html';
   menuBracket = document.baseURI === 'http://127.0.0.1:49197/menus.html';
   contactBracket= document.baseURI === 'http://127.0.0.1:49197/contact.html';
   
