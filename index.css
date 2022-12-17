@@ -223,7 +223,7 @@ h2 {
 .testimonials .boxes,
 .cat-wrapper .a .boxes,
 .cat-wrapper .a .boxes button,
-.cat-wrapper .cart-scroll .cartshell,
+.cart-wrapper .cartshell,
 .food-modal2 button,
 .food-modal2 .cols-2 .btn-wrapper button,
 .food-modal2 .cols-2 table,
@@ -243,7 +243,7 @@ h2 {
 .contact-wrapper .cols-2 form,
 .contact-wrapper .box table,
 .contact-wrapper .box .links,
-.cat-wrapper .cart-scroll .cartshell {
+.cart-wrapper .cartshell {
   box-shadow: 
   0px 0px 2px white,
   0px 0px 5px rgb(54, 54, 54);
@@ -715,6 +715,7 @@ input[type=number] {
 .cart-wrapper .cart-scroll {
   height: auto;
   overflow: hidden;
+  padding: 10px;
 }
 .cart-wrapper .cart-title {
   width: 100%;
