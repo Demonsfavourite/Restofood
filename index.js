@@ -23,6 +23,10 @@ document.querySelector('.navbtn').onclick = e => {
   }
 }
 
+const padding = () => {
+  document.querySelector('.cart-scroll').childElementCount > 0 ? document.querySelector('.cart-scroll').classList.add('padding') : document.querySelector('.cart-scroll').classList.remove('padding');
+}
+
 var foods = JSON.parse(localStorage.getItem('foods', foods)) || [];
 
 const filled = () => {
@@ -106,6 +110,7 @@ const createCart = ({title, img, category, order, price}) => {
       
           y = document.querySelector('.a5').parentElement.nextElementSibling.firstElementChild === null;
           y === true ? document.querySelector('.a5').nextElementSibling.innerText = " You haven't added something " : document.querySelector('.a5').nextElementSibling.innerText = " Food Cart List ";
+          padding();
         }
       };
       a = e.currentTarget.parentElement.parentElement.parentElement.firstChild.firstElementChild.innerText;
@@ -181,6 +186,7 @@ for(cart of carts) {
     localStorage.setItem('fill', JSON.stringify(fill));
     x = document.querySelector('.a5').parentElement.nextElementSibling.firstElementChild === null;
     x === true ? document.querySelector('.a5').nextElementSibling.innerText = " You haven't added something " : document.querySelector('.a5').nextElementSibling.innerText = " Food Cart List ";
+    padding();
   }
 }
 
