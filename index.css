@@ -148,7 +148,8 @@ header nav ul li button:hover {
 .food-modal2 .cols-2 .btn-wrapper button:hover,
 .contact-wrapper .cols-2 form .submit:hover,
 .cart-wrapper .cartshell .cols-2 .btn-wrapper button:hover {
-  background: linear-gradient(to bottom right, #483f3f,#333232, #483f3f);
+  background: linear-gradient(to bottom right, #ff5353,#ff1c1c, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
 }
 .food-modal2 .cols-2 .qwrapper .dec:hover,
 .food-modal2 .cols-2 .qwrapper .inc:hover {
@@ -165,7 +166,7 @@ header nav ul li button:hover {
   content: '';
   width: 100%;
   height: 2px;
-  background: black;
+  background: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -176,7 +177,7 @@ header nav ul li button:hover {
   content: '';
   width: 100%;
   height: 2px;
-  background: black;
+  background: rgb(255, 255, 255);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -184,9 +185,6 @@ header nav ul li button:hover {
   transform: scale(.8);
 }
 
-.a1 {
-  color: #000000;
-}
 .a3 {
   color: #e30000;
 }
@@ -215,26 +213,49 @@ h2 {
   padding-bottom: 20px;
   flex-wrap: wrap;
 }
-/** Transitions **/
+
+.categories button:after {
+  background: white;
+}
+
 .display .boxes,
 .how .boxes,
 .testimonials .boxes,
 .cat-wrapper .a .boxes,
 .cat-wrapper .a .boxes button,
+.cat-wrapper .cart-scroll .cartshell,
 .food-modal2 button,
 .food-modal2 .cols-2 .btn-wrapper button,
+.food-modal2 .cols-2 table,
 .food-modal2 .cols-2 .qwrapper .dec,
 .food-modal2 .cols-2 .qwrapper .inc,
-.categories button:after,
+.contact-wrapper .cols-2 form,
 .contact-wrapper .cols-2 form .submit,
-.contact-wrapper .cols-2 .box a {
+.contact-wrapper .cols-2 .box a,
+.contact-wrapper .box,
+.contact-wrapper .links {
   transition: .2s ease-in-out;
+  background: linear-gradient(to bottom right, rgb(27, 27, 27),rgb(10, 10, 10),rgb(26, 26, 26));
 }
+
+.boxes,
+.food-modal2 .cols-2 table,
+.contact-wrapper .cols-2 form,
+.contact-wrapper .box table,
+.contact-wrapper .box .links,
+.cat-wrapper .cart-scroll .cartshell {
+  box-shadow: 
+  0px 0px 2px white,
+  0px 0px 5px rgb(54, 54, 54);
+}
+
 body {
   font-family: roboto-regular;
   font-size: 16px;
   color: black;
   animation: onload 1s ease-in-out 1;
+  background: rgb(12,12,12);
+  color: white;
 }
 
 header nav {
@@ -244,13 +265,13 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 1px 5px #939393;
+  border-bottom: 1px solid rgb(145, 145, 145);
 }
 
 header nav .logo {
   font-size: x-large;
   position: relative;
-  color: black;
+  color: inherit;
   left: 100px;
   font-family: poppins-bold;
 }
@@ -266,11 +287,11 @@ header nav ul li {
 header nav ul li a {
   display: block;
   padding: 10px 20px;
-  color: black;
+  color: inherit;
   text-transform: uppercase;
 }
 header nav ul li button {
-  background: url('img/cartb.png') no-repeat center;
+  background: url('img/cartw.png') no-repeat center;
   background-size: contain;
   width: 3em;
   height: 2.3em;
@@ -298,6 +319,7 @@ header nav ul li.navbtn {
   justify-content: center;
   align-items: center;
   padding: 80px 0px;
+  background: linear-gradient(to bottom right, rgb(27, 27, 27),rgb(10, 10, 10),rgb(26, 26, 26))
 }
 .hero .cols-2 {
   width: 50%;
@@ -305,7 +327,6 @@ header nav ul li.navbtn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: ;
 }
 .hero .cols-2:nth-child(1) {
   align-items: center;
@@ -323,12 +344,12 @@ header nav ul li.navbtn {
   border-radius: 10px;
 }
 .hero .cols-2 a {
-  color: white;
-  background: linear-gradient(to bottom right, #382828,#000000, #382828);
+  color: inherit;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
   display: block;
   padding: 10px 20px;
   border-radius: 10px;
-  box-shadow: -2px 2px 5px #6f6f6f;
+  box-shadow: 0px 0px 5px #b83232;
   margin: 30px 0px 0px;
   transition: .1s ease-in-out;
 }
@@ -347,7 +368,6 @@ header nav ul li.navbtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #151515;
 }
 .display .food-card .boxes {
   width: 15%;
@@ -355,7 +375,6 @@ header nav ul li.navbtn {
   display: block;
   text-align: center;
   padding: 10px;
-  box-shadow: -1px 2px 5px #7e7e7e;
 }
 .display .food-card .boxes img {
   width: 100%;
@@ -398,7 +417,7 @@ header nav ul li.navbtn {
   display: block;
   padding: 10px;
   text-align: center;
-  box-shadow: -1px 2px 5px #7e7e7e;
+  color: inherit;
 }
 .how .how-wrapper .boxes p {
   word-break: break-all;
@@ -432,9 +451,6 @@ header nav ul li.navbtn {
   display: block;
   padding: 10px;
   text-align: center;
-  background: linear-gradient(to bottom right, #606777, rgb(21, 39, 30), #606777);
-  box-shadow: -1px 2px 5px #838383;
-  color: white;
 }
 .testimonials .testimonials-wrapper .boxes .stars {
   width: 100%;
@@ -478,10 +494,7 @@ footer {
   justify-content: center;
   padding: 20px;
 }
-.contact-wrapper .cols-2 form {
-  
-  box-shadow: -1px 2px 5px #7e7e7e;
-}
+
 .contact-wrapper .cols-2 form, 
 .contact-wrapper .cols-2 .box {
   width: 70%;
@@ -500,14 +513,15 @@ footer {
   border-radius:0px 10px 10px 0px;
   margin: 10px;
   color: #ffffff;
-  background: #262323;
+  background: #0e0e0e;
+  box-shadow: 0px 0px 2px #ffffff, 0px 0px 5px #1b1b1b;
 }
 .contact-wrapper .cols-2 form textarea {
   height: 150px;
   resize: none;
 }
 .contact-wrapper .cols-2 form ::placeholder {
-  color: #b29797;
+  color: #cfcfcf;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -518,12 +532,12 @@ input[type=number] {
   -moz-appearance:textfield;
 }
 .contact-wrapper .cols-2 form .submit {
-  background: linear-gradient(to bottom right, #382828,#000000, #382828);
-  color: white;
+  color: inherit;
   padding: 10px 20px;
   border-radius: 10px;
   margin: 10px 0px 20px;
-  box-shadow: -1px 1px 5px #4e0000;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
 }
 .contact-wrapper .cols-2 .box table{
   border-collapse: collapse;
@@ -531,7 +545,6 @@ input[type=number] {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: -1px 2px 5px #7e7e7e;
 }
 .contact-wrapper .cols-2 .box table td {
   padding: 10px;
@@ -555,7 +568,6 @@ input[type=number] {
   padding: 10px 0px;
   margin-top: 20px;
   border-radius: 10px;
-  box-shadow: -1px 2px 5px #7e7e7e;
 }
 .contact-wrapper .cols-2 .box .links .fb,
 .contact-wrapper .cols-2 .box .links .ig,
@@ -606,6 +618,7 @@ input[type=number] {
   background: transparent;
   cursor: pointer;
   position: relative;
+  color: inherit;
 }
 .cat-wrapper {
   width: 100%;
@@ -630,16 +643,13 @@ input[type=number] {
   text-align: center;
   padding: 10px 0px;
   margin: 15px 15px;
-  box-shadow: -2px 2px 5px #a8a8a8;
   border-radius: 10px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
 }
 .cat-wrapper .a .boxes img {
   width: 80%;
 }
 .cat-wrapper .a .boxes hr {
-  box-shadow: 0px 2px 1px #727272;
+  box-shadow: 0px 1px 2px #ffffff;
   height: 1px;
   margin: 10px auto 5px;
 }
@@ -655,11 +665,11 @@ input[type=number] {
   padding: 8px 20px;
   margin-top: 15px;
   border-radius: 5px;
-  color: white;
+  color: inherit;
   font-weight: 600;
   text-transform: lowercase;
-  background: linear-gradient(to bottom right, #382828,#000000, #382828);
-  box-shadow: -1px 1px 5px #404040;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
 }
 
 .single-person, .two-person, .family-meal {
@@ -687,8 +697,10 @@ input[type=number] {
   border-radius: 0px 0px 0px 10px;
   display: none;
   background: rgba(0,0,0,0.9);
-  box-shadow: -2px 2px 5px #9f9f9f;
-  color: white;
+  box-shadow: 
+  0px 0px 2px white,
+  0px 0px 5px rgb(54, 54, 54);
+  color: inherit;
   overflow-y: scroll;
 }
 .slide {
@@ -737,8 +749,7 @@ input[type=number] {
   border-radius: 10px;
   padding: 10px;
   transition: .5s ease-in-out;
-  background: rgb(255, 255, 255);
-  color: black;
+  color: inherit;
 }
 .cart-wrapper .cartshell .cols-2 {
   width: 50%;
@@ -746,7 +757,7 @@ input[type=number] {
 }
 .cart-wrapper .cartshell .cols-2:nth-child(1) {
   text-align: center;
-  border-right: 1px solid #000000;
+  border-right: 1px solid #ffffff;
 }
 .cart-wrapper .cartshell .cols-2 h3 {
   display: block;
@@ -776,10 +787,10 @@ input[type=number] {
 .cart-wrapper .cartshell .cols-2 .btn-wrapper > button {
   padding: 10px 20px;
   margin: 0px 10px;
-  background: linear-gradient(to bottom right, #382828,#000000, #382828);
-  color: white;
+  color: inherit;
   border-radius: 10px;
-  box-shadow: -1px 1px 5px #505050;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
 }
 
 .food-modal {
@@ -797,7 +808,7 @@ input[type=number] {
   z-index: 1;
   animation: slide3 .7s ease-in-out 1;
   display: flex;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
 }
 .cmodal {
   animation: slide4 1s ease-in-out 1;
@@ -815,11 +826,12 @@ input[type=number] {
   padding: 20px;
   border-radius: 10px;
   position: fixed;
-  background: white;
+  background: rgba(0, 0, 0, 0.945);
+  color: inherit;
 }
 .food-modal2 .cbtn {
   font-weight: 600;
-  color: black;
+  color: inherit;
   background: transparent;
   display: block;
   font-size: 1.1em;
@@ -828,7 +840,7 @@ input[type=number] {
   height: 1.5em;
   position: relative;
   top: -15px;
-  box-shadow: 0px 1px 3px #606060;
+  box-shadow: 0px 0px 3px hsl(0, 0%, 100%);
   border-radius: 50em;
 }
 .food-modal2 .cols-2 {
@@ -845,12 +857,11 @@ input[type=number] {
 }
 .food-modal2 .cols-2 table {
   border-collapse: collapse;
-  box-shadow: -2px 2px 5px #696969;
   margin: 10px auto;
   border-radius: 5px;
 }
 .food-modal2 .cols-2 table td:nth-child(1) {
-  border-right: 2px solid #696969;
+  border-right: 1px solid hsl(0, 0%, 100%);
 }
 .food-modal2 .cols-2 table td {
   padding: 10px 25px;
@@ -873,17 +884,16 @@ input[type=number] {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: -2px 2px 5px #696969;
+  box-shadow: 0px 0px 3px #ffffff;
   border-radius: 5px;
+  color: inherit;
 }
 .food-modal2 .cols-2 .qwrapper .dec,
 .food-modal2 .cols-2 .qwrapper .inc {
   cursor: pointer;
-  color: black;
   font-size: inherit;
 }
 .food-modal2 .cols-2 .qwrapper .num {
-  color: black;
   font-size: inherit;
 }
 .food-modal2 .cols-2 .btn-wrapper {
@@ -895,7 +905,7 @@ input[type=number] {
   padding: 10px 20px;
   border-radius: 5px;
   margin: 10px 10px;
-  background: linear-gradient(to bottom right, #382828,#000000, #382828);
-  box-shadow: -2px 2px 5px #888888;
-  color: white;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+  color: inherit;
 }
