@@ -1,8 +1,12 @@
-# Restofood <a href="https://jinshin19.github.io/Restofood">Restofood Link</a>
+# Restofood: Simple Ecommerce Website.
 
-I made a simple website with a basic features of add to cart / delete / basic calculation and so on.
+- Restofood is a simple ecommerce website with some basic functionalities. I was so curious, fantasize of what I can do using localstorage and because of that restofood is created. I know this is very basic compared to the pros out there but I'm not a pro, I'm still a student and a self-taught one.
 
-- I used localStorage.
+<b>This is the link</b>: <a href="https://jinshin19.github.io/Restofood">Try it!</a>
 
-Btw, I'm a self-taught student. I forgot to include that the " Order Now " button is just
-only a props. thanks
+# Functionalities:
+ -<b>Basic Calculation.</b>
+ -<b>Persist Add To Cart.</b>
+ -<b>Removable add to cart items.</b>
+ -<b>So on</b>
+ -<b>Order now is just a prop. It doesn't have any functionality. I haven't learned the payment gateway yet.</b>
