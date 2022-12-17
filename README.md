@@ -5,8 +5,8 @@
 <b>This is the link</b>: <a href="https://jinshin19.github.io/Restofood">Try it!</a>
 
 # Functionalities:
- -<b>Basic Calculation.</b>
- -<b>Persist Add To Cart.</b>
- -<b>Removable add to cart items.</b>
- -<b>So on</b>
- -<b>Order now is just a prop. It doesn't have any functionality. I haven't learned the payment gateway yet.</b>
+ -<b>Basic Calculation.</b><br>
+ -<b>Persist Add To Cart.</b><br>
+ -<b>Removable add to cart items.</b><br>
+ -<b>So on</b><br>
+ -<b>Order now is just a prop. It doesn't have any functionality. I haven't learned the payment gateway yet.</b><br>
