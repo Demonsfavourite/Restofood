@@ -715,6 +715,8 @@ input[type=number] {
 .cart-wrapper .cart-scroll {
   height: auto;
   overflow: hidden;
+}
+.padding {
   padding: 10px;
 }
 .cart-wrapper .cart-title {
